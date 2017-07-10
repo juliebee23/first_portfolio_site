@@ -1,250 +1,63 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
 body {
-	background-color: white;
-	font-family: 'Dosis', sans-serif;
-}
-
-/*#151832*/
-
-.landing {
-	background-image:url(Ridge.png);
-	padding: 25%;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	width: 100%;
-	background-attachment: fixed;
-	background-position:  center -100px;
-	margin-top: -40px;
-}
-.landing h1 {
-	position: absolute;
-	/*font-family: 'Rock Salt', cursive;*/
-	font-size:90px;
-	/*left:10%;
-	bottom: 30%;*/
-	color: white;
-	text-shadow: 3px 3px 0px #393E40;
-	text-align: center;
-	vertical-align: middle;
-}
-
-.landing p {
-	position: absolute;
-	font-size: 30px;
-	left: 14%;
-	bottom: 20%;
-	color: white;
-	text-align: center;
-}
-
-.landing #down {
-	background: none;
-	border: none;
-	color: grey;
-	font-size: 2em;
-	position: absolute;
-	left: 48%;
-	top: 90%;
-	bottom: 10%;
-	width: 60%;
-  opacity: 0.7;
-  vertical-align: bottom;
-}
-
-/*.navigation ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 10px;
+  background-image:url(http://st.gde-fon.com/wallpapers_original/526823_zakat_plyazh-vozle-la-push_vashington_3444x2238_www.Gde-Fon.com.jpg);
+  background-repeat: no-repeat;
+  background-size:100% auto;
+  background-position: fixed;
+  background-color: black;
 }
 
 .navigation li {
-	display: inline;
+  display: inline;
+}
+
+.landing {
+  float: center;
+  margin: 22% auto;
+}
+
+.landing h1 {
+  color: white;
+  text-shadow: 3px 3px 0px #393E40;
+  text-align: center;
+  font-size: 60px;
+}
+
+.landing p {
+  line-height: 50%;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+/*#down {
+  margin: 570px;
+  border-style: solid;
+  border-width: 2px;
+  color: grey;
+  font-size: 2em;
+  opacity: 0.7;
 }*/
-
-.introduction {
-	background-color: #144457;
-	margin-top: -00px;
-}
-
-.introduction p {
-	color: white;
-	font-size: 30px;
-	margin: 100px;
-	text-align: center;
-}
-
-.skills {
-	padding: 2%;
-	color:#323232;
-	background-color: #D6D5BF;
-}
-
-.skills #hiker {
-	max-width: 6em;
-	max-height: 6em;
-	}
-
-.skills #mountainIcon {
-	max-width: 10em;
-	max-height: 10em;
-	padding-bottom: 1.8em;
-}
-
-.skills #compassRose {
-	max-width: 6em;
-	max-height: 6em;
-}
-
-.skills h1 {
-	text-align: center;
-	text-decoration: underline;
-	font-size: 3em;
-}
-
-.skills p {
-	text-align: center;
-	font-size: 2em
-}
-
-.inspiration {
-	background-image:url(Ridge.png);
-	background-attachment: fixed;
-	margin-top: -00px;
-}
-
-.inspiration p {
-	color: black;
-	font-size: 60px;
-	margin: 100px;
-	text-align: center;
-	font-family: 'Lobster', cursive;
-}
-
-.about {
-	padding: 6%;
-	background-color:#111A33;
-	color: white;
-	margin-top: -00px;
-	font-size: 20px;
-}
-
-.about h1 {
-	text-align: center;
-	text-decoration: underline;
-}
-
-.about p {
-	padding: 5% 10% ;
-	text-align: center;
-	position: center;
-}
-
-.about img {
-	padding-top: 10%;
-	padding-bottom: 10%;
-}
-
-.work {
-	padding-top: 5%;
-	padding-bottom: 8%;
-	background-color: #173B55;
-	color: white;
-}
-
-.work p {
-	font-size: 3em;
-	text-align: center;
-	text-decoration: underline;
-}
-
-.work img{
-	padding: 5% 0;
-}
-
-/*.work #rahabsRope {
-	max-width: 27em;
-	max-height: 27em;
-}
-
-.work #mknEnterprises {
-	max-width: 27em;
-	max-height: 27em;
-}
-
-.work #budAndBee {
-	max-width: 27em;
-	max-height: 27em;
-}*/
-
-.contact {
-	background-image:url(Summit.png);
-	background-attachment: fixed;
-	background-position: center;
-	opacity: .8;
-	padding: 5%;
-}
-
-.contact p {
-	font-size: 5em;
-	text-align: center;
-}
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 1px;
-    margin-bottom: 6px;
-    resize: vertical;
-}
-
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-.contactForm {
-    border-radius: 5px;
-    background-color: white;
-    opacity: .8;
-    border: solid;
-    padding: 5px;
-}
-
-@media only screen and (max-width: 480px) { /*CSS styles for mobile*/
-    .box{
-        width: 100%;
-        height: 300px;
-        background-color: red;
-    }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 768px) { /*CSS styles for tablets*/
-    .box{
-        width: 80%;
-				height: 300px;        
-        margin: 0 auto;
-        background-color: yellow;
-    }
-}
-
-@media only screen and (min-width: 769px) { /*CSS styles for large screens*/
-    .box{
-        width: 60%;
-        height: 300px;
-        margin: 0 auto;
-        background-color: green;
-    }
-}
